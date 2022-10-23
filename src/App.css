@@ -1,80 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
-.header{
-  text-align: center;
-  margin-bottom:0px;
-  justify-content: start;
-  font-weight: 800;
-  font-size: 30px;
-}
-
-p{
-  margin: 0;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.income-expense{
-  display: flex;
-  justify-content: space-between;
-  margin: 20px  0 0 0;
-  padding: 20px;
-  background: #f8fcfb;
-  border-radius: 5px;
-}
-
-.box-one {
-  margin: 0 10px;
-  padding: 0 10px;
-  font-weight: 800;
-  font-size: 15px;
-  color: green;
-  border-right: 1px solid green;
-}
-.box-two{
-  margin: 0 10px;
-  font-weight: 800;
-  font-size: 15px;
-  width: 100%;
-  color: red;
-}
-
-.list {
-  list-style: none;
-  background-attachment: fixed;
-  background: #f8fcfb;
-  margin: 10px 0 ;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-input{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+.navbar{
+    background: #22313f;
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 
-input[type=text]  , input[type=number]{
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
+.search{
+    width: 60%;
+    margin: 1%  auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-input[type=text]:focus  , input[type=number]:focus {
-  outline: 2px solid #9ba6a5;
-  border-color: transparent;
-  border-color: 1px solid gray;
+.input-container{
+    width: 60%;
+    margin: 5% auto;
+    display: flex;
 }
 
-input[type=submit] {
-  background-color: #fa9856;
-  border: transparent;
-  padding: 5px 0;
-  border-radius: 3px;
-  margin: 10px 0;
+input[type="text"]{
+    flex : 3;
+    border-color:  transparent;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    background: #263849;
+    color: #fff !important;
+    margin: 0 2px 0 0 ;
 }
+
+::placeholder { 
+    color: #b2e4d5;
+    opacity: 1; /* Firefox */
+  }
+
+input[type="text"]:focus{
+    outline: none;
+    border-bottom:  3px solid  #7dd87d;
+
+}
+
+input[type="submit"]{
+    flex : 1;
+    border-radius: 6px;
+    background: #263849;
+    color: #fff;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.checkbox-input{
+    margin: 0 20px;
+}
+
+.todo-container{
+    width: 60%;
+    margin: auto;
+}
+
+.todo-item{
+    background-color: #263849;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 2px  0;
+    color: #b2e4d5;
+    position: relative;
+}
+
+.btn-group{
+    position: absolute;
+    right: 0;
+    top : 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    counter-reset: #fff;
+    color: #225763;
+}
+
